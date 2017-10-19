@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <comida>
+        <nombre>Atole</nombre>
+        <precio>$7.00</precio>
+        <descripcion>Atole bajo en calorias :D</descripcion>
+        <calorias>650</calorias>
+    </comida>
+    <comida>
+        <nombre>Torta de Tamal</nombre>
+        <precio>$9.00</precio>
+        <descripcion>Torta con tamal, sabe rico</descripcion>
+        <calorias>1500</calorias>
+    </comida>    
+</menu>
+
