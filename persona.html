@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="style">
+</head>
+<title>
+    XML 
+</title>
+<body>
+    <h1> Personas </h1>
+    <script>
+        if(window.XMLHttpRequest){
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXobject("Microsoft.XMLHTTP");
+        }
+        
+        xmlhttp.open("GET","persona.xml",false);
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        document.write("<table border='1' width='60%' style='font-size:40px;'>");  //permite crear una tabla en html
+        document.write("<tr><th> Rol </th><th> Nombre </th><th> Edad </th> </tr>");
+        var x, y, z;
+        x=xmlDoc.getElementsByTagName("roll"); //permite el recorrido del documento xml
+        y=xmlDoc.getElementsByTagName("name"); //permite el recorrido del documento xml
+        z=xmlDoc.getElementsByTagName("age"); //permite el recorrido del documento xml
+        for(i=0; i<x.length; i++){
+            document.write("<tr><td>");
+            document.write(x[i].childNodes[0].nodeValue);
+            document.write("</td><td>");
+            document.write(y[i].childNodes[0].nodeValue);
+            document.write("</td><td>");
+            document.write(z[i].childNodes[0].nodeValue);
+            document.write("</td><td>");
+        }
+        document.write("</table>");
+    
+    </script>
+</body>
+</html>

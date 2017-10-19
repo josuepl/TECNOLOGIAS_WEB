@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ésto define la versión de xml -->
+<root> <!-- Es la marca principal -->
+<usuario>
+    <roll> 1 </rOll>
+    <name> Josue </NaMe>
+    <age> 48 </AGE>
+</usuario>
+
+<usuario>
+    <roll> 2 </roll>
+    <name> Otro_Josue 
+    <age> 39 </age>
+</usuario>
+
+<usuario>
+    <roll> 3 </roll>
+    <name> Ot_Josue </name>
+    <age> 17 </age>
+
+
+</root>
