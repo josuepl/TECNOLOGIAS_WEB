@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Page title</title>
+<script type="text/javascript" src="cargaDocXML.js"></script>
+<script type="text/javascript">
+//cargar el documento XML
+xmlDoc=cargaDocXML("http://localhost/AJAX/ejemplo.xml");
+//obtener datos y preparar su salida
+mititulo=xmlDoc.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
+mititulo="<p>Libro: "+mititulo+"</p>";
+miautor=xmlDoc.getElementsByTagName("autor")[0].childNodes[0].nodeValue;
+miautor="<p>Autor: "+miautor+"</p>";
+migenero=xmlDoc.getElementsByTagName("genero")[0].childNodes[0].nodeValue;
+migenero="<p>Género: "+migenero+"</p>";
+mianyo=xmlDoc.getElementsByTagName("año")[0].childNodes[0].nodeValue;
+mianyo="<p>Ano: "+mianyo+"</p>";
+//sacar datos en la página
+window.onload=function() {
+texto=document.getElementById("milibro");
+texto.innerHTML=mititulo+miautor+migenero+mianyo;
+}
+</script>
+</head>
+<body>
+<h1>Libro</h1>
+<div id="milibro"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="libro.xsd" precio="20">
+<titulo>Fundamentos de XML Schema</titulo>
+<autor>Allen Wyke</autor>
+<genero>Computacion</genero>
+<year>2010</year>
+<Editorial>Wiley</Editorial>
+
+</Libro>
