@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contacto</title>
+		<meta charset="utf-8"/>
+	</head>
+	
+	<body>
+		<form enctype="multipart/form-data">
+			
+			<!--Datos personales-->
+			<fieldset name="datospesonales"><legend>Datos Personales</legend>
+				
+					<p>
+					<label for="nombre">Nombre*</label>
+					<input name="nombre" type="text" id="nombre"
+					placeholder="usuario"
+					autocomplete="on"
+					required />
+					
+					<label for="apellidos">Apellidos*</label>
+					<input name="apellidos" type="text" id="apellidos"
+					placeholder="apellido paterno apellido materno"
+					autocomplete="on"
+					required />
+					</p>
+				
+			
+					
+					
+					<p>
+					<label for="mail">Email*</label>
+					<input type="email" name="mail" id="mail"
+					placeholder="ejemplo@email.com"
+					autocomplete="on"
+					required />
+					</p>
+					
+					<p>
+					<label>Fecha de nacimiento</label>
+					<input type="date" name="nacimiento" id="nacimiento"/>
+					</p>
+					
+					<p>
+					<label>Género</label><br/>	
+					<label for="hombre">Hombre</label>
+					<input type="radio" name="sexo" value="hombre" id="hombre"/>
+							
+					<label for="mujer">Mujer</label>
+					<input type="radio" name="sexo" value="mujer" id="mujer"/>
+					</p>
+					
+			</fieldset>
+		</form>
+	</body>
+	</html>
