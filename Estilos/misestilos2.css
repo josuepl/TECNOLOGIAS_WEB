@@ -1,0 +1,7 @@
+﻿<style>
+
+p[class ="to"] { font-size: 40px }
+p[class$="tex"] { font-size: 30px }
+p[class*="mi"] { font-size: 60px }
+
+</style>
