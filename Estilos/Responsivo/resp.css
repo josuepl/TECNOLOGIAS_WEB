@@ -1,0 +1,91 @@
+
+
+	.container {
+		width:996px;
+		margin:0px auto;
+		font-size:1em;
+	}
+	section,aside {
+		padding: 10px;
+		background:#ccc;
+		-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+	}
+	section {
+		float: left;
+		width: 70%;
+	}
+	aside {
+		float: right;
+		width: 25%;
+	}
+	nav {
+		overflow: hidden;
+	}
+	nav ul {
+		list-style-type:none;
+		float:left;
+		padding:0px;
+	}
+	nav ul li {
+		float:left;
+		padding:3px 10px;
+		margin:2px;
+		background-color:#33b5e5;
+        color: #ffff;
+		-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+	}
+	footer {
+		margin:10px;
+		text-align:center;
+		clear:both;
+	}
+ 
+	/* para 980px o menos */
+	@media screen and (max-width:980px) {
+		.container {
+			width:98%;
+		}
+		section {
+			width:68%;
+		}
+	}
+ 
+	/* para 700px o menos */
+	@media screen and (max-width:700px) {
+		aside,section {
+			float:none;
+			width:96%;
+		}
+		nav, section {
+			font-size:1.2em;
+		}
+		aside {
+			margin-top:5px;
+		}
+		nav ul {
+			float:none;
+			clear:both;
+		}
+	}
+ 
+	/* para 480px o menos */
+	@media screen and (max-width:480px) {
+		aside {
+			display:none;
+		}
+		nav, section {
+			font-size:1.5em;
+		}
+		section {
+			width:94%;
+		}
+		nav ul {
+			float:left;
+			clear:none;
+			width:50%;
+		}
+		nav ul li {
+			float:none;
+		}
+	}
+	
