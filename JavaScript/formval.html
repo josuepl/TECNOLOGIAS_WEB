@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title> 
+</head>
+    <body>
+            <script>
+                    function validacion(f){
+                
+                        commex = document.getElementById("mexicana")
+                        indice = document.getElementById("opciones").selectedIndex;
+                        if( indice == null || indice == 0 ) {
+                            alert("Dato no enviado error al elegir, seleccione una opción válida");
+                            //return false;
+                        }
+                        if( !document.getElementById("mexicana").checked){
+                            alert("Dato no enviado error al elegir, seleccione una comida valida");
+                            //return false;
+			}
+                            valor = document.getElementById("campo").value;
+                        
+                        var letras = ['A','B','C','D','F','G','H','I','J','K','L','M','N','Ñ','O','P','R','S','T','U','V','W','X','Y','Z'];
+                        if( !(/^\d{8}[A-Z]{4}$/.test(valor)) ) {
+			    if(!(/^\d{3}$/.test(valor)=="222"))
+                            alert("Dato no enviado error en el TEXTO, se deben ingresar 8 numeros");
+                            //return false;
+                        }
+                        
+                    
+                        else 
+                            return true;  
+                       
+                    }
+                </script> 
+        <form id="formulario" action="#" method="GET" onsubmit='return validacion(this)'>
+            <select id="opciones" name="opciones">
+                <option value="">- Selecciona un valor -</option>
+                    <option value="1">Primer valor</option>
+                    <option value="2">Segundo valor</option>
+                    <option value="3">Tercer valor</option>
+            </select>
+
+            <p>
+                    <input id="mexicana" type="checkbox" checked="true">Comida mexicana </input>
+                    <input id="francesa" type="checkbox" value="">Comida francesa </input>
+                    <input id="italiana" type="checkbox" value=""> Comida italiana </input>
+            </p>
+            <input type="submit" value="Enviar" />
+            <p>
+                <input id="campo" type="text" value="Ingresa tu ID"/>
+            </p>
+        </form>
+       
+    </body>
+</html>
