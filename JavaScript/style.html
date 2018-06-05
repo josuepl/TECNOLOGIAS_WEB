@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <script>
+        cont = 0;
+     function cambiatodo(){
+        tam = cont+35;
+        px = tam+"px";
+        document.getElementById('prueba').style.fontSize=px;
+        document.getElementById('prueba').style.background='Yellow';
+        document.getElementById('prueba').style.fontFamily='Verdana';
+     cont++;
+     }
+    </script>
 </head>
 <body>
 
@@ -13,6 +23,6 @@
 <button type="button" onclick="document.getElementById('prueba').style.background='Red'">Cambia Fondo</button>
 <button type="button" onclick="document.getElementById('prueba').style.fontFamily='Verdana'">Cambia Fuente</button>
 
-<button type="button" onclick="cambiatodo(me)">Cambia TODO</button>
+<button type="button" onclick="cambiatodo()">Cambia TODO</button>
 </body>
-</html>     
+</html>          
