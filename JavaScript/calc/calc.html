@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title> 
+    <script src= "JS/calc.js"></script>
+</head>
+    <body>
+        <section class="calculadora">
+            <form action="#" name="calculadora" id="calculadora">
+            <p id="Resultado">0</p>
+            <p>
+                <input type="button" value="7" onclick="numero('7')"/>
+                <input type="button" value="8" onclick="numero('8')"/>
+                <input type="button" value="9" onclick="numero('9')"/>
+                <input type="button" value="/"  onclick="div()"/>
+            </p>
+            <p>
+                <input type="button" value="4" onclick="numero('4')"/>
+                <input type="button" value="5" onclick="numero('5')"/>
+                <input type="button" value="6" onclick="numero('6')"/>
+                <input type="button" value="*" onclick="mul()"/>
+
+            </p>
+            <p>
+                <input type="button" value="1" onclick="numero('1')"/>
+                <input type="button" value="2" onclick="numero('2')"/>
+                <input type="button" value="3" onclick="numero('3')"/>
+                <input type="button" value="-" onclick="res()"/>
+
+            </p>
+            <p>
+                <input type="button" value="0" onclick="numero('0')"/>
+                <input type="button" value="+" onclick="sum()"/>
+                <input type="button" value="=" onclick="igual()"/>
+            </p>
+            </form>
+        </section>
+    </body>
+</html>
