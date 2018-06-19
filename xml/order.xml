@@ -5,7 +5,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="order_ship.xsd">
   <orderperson>John Smith</orderperson>
   <shipto>
-    <nombre>Ola Nordmann</nombre>
+    <name>Ola Nordmann</name>
     <address>Langgt 23</address>
     <city>4000 Stavanger</city>
     <country>Norway</country>
