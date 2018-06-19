@@ -1,0 +1,6 @@
+<!ELEMENT pago (emisor,receptor,tipo,motivo)>
+<!ELEMENT emisor (#PCDATA)>
+<!ELEMENT receptor (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT motivo (#PCDATA)>
+

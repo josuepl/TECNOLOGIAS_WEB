@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<biblioteca>
+<libro>
+    <datos>
+        <titulo>Tecnologías WEB</titulo>
+        <autor>Josue JJ</autor>
+    </datos>
+    <genero>Terror</genero>
+    <año>2016</año>
+    <a b="x" c="y" d="z">....</a>
+    <address category="residence">
+   
+      <name>Tanmay Patil</name>
+      <company>TutorialsPoint</company>
+      <phone>(011) 123-4567</phone>
+      
+    </address>
+    
+</libro>        
+
+<libro>
+    <datos>
+        <titulo>Tecnologías WEB</titulo>
+        <autor>Josue LL</autor>
+    </datos>
+    <genero>Terror</genero>
+    <año>2016</año>
+    <a b="x" c="y" d="z">....</a>
+     <address category="residence">
+   
+      <name>Tanmay Patil</name>
+      <company>TutorialsPoint</company>
+      <phone>(011) 123-4567</phone>
+      
+   </address>
+
+</libro>
+</biblioteca>

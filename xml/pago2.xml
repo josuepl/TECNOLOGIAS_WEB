@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<pago xmlns="localhost"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="localhost pago.xsd">
+<pago>
+  <emisor>Juan</para>
+  <receptor>Pepe</de>
+  <tipo>servicios médicos</asunto>
+  <motivo>enfermedad vías respiratorias</motivo>
+</pago> 
