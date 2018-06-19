@@ -1,8 +1,8 @@
  <?xml version="1.0"?>
  <!DOCTYPE pago SYSTEM "pago.dtd">
 <pago>
-  <emisor>Juan</para>
-  <receptor>Pepe</de>
-  <tipo>servicios médicos</asunto>
+  <emisor>Juan</emisor>
+  <receptor>Pepe</receptor>
+  <tipo>servicios médicos</tipo>
   <motivo>enfermedad vias respiratorias</motivo>
 </pago> 
