@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro seccion="favoritos">
+    <autor>J K. Rowling </autor>
+    <titulo>Harry Potter</titulo>
+    <anio>1998</anio>
+    <editorial>UK EDS</editorial>
+  </libro>
+</biblioteca>

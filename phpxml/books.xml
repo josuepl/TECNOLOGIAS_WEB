@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book category="COOKING">
+    <title lang="en">Everyday Italian</title>
+      <author>
+        <nombre>Giada De Laurentiis </nombre>
+        <edad>56</edad>
+        <pais>Italiana</pais>
+      </author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+  <book category="CHILDREN">
+    <title lang="en">Harry Potter</title>
+      <author>
+      <nombre>J K. Rowling </nombre>
+        <edad>56</edad>
+        <pais>Italiana</pais>
+      </author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+  <book category="WEB">
+    <title lang="en-us">XQuery Kick Start</title>
+    <author>
+    
+      <nombre>James McGovern</nombre>
+        <edad>56</edad>
+        <pais>Italiana</pais>
+     
+    </author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+  <book category="WEB">
+    <title lang="en-us">Learning XML</title>
+    <author>
+    
+      <nombre>James McGssssssovern</nombre>
+        <edad>56</edad>
+        <pais>Italiana</pais>
+
+    </author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+</bookstore>
