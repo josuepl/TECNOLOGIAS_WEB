@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Este texto es el título del documento</title>
+<meta charset="UTF-8">
+<script src="Objetos.js"></script>
+</head>
+<body>
+    <div id="principal">
+        <p id ="uno" ></p>
+        <p id ="dos" ></p>
+        <p id ="tres"></p>
+    </div>
+
+    <script>
+        document.getElementById("uno").innerHTML = "Es la sección: <header>"+ Seccion["header"] + "</header>"+ "Es el contenido: <p>" + Seccion["cont"] + "</p>";  
+        document.getElementById("dos").innerHTML = "Es la sección: <header>"+ seccion2.header + "</header>"+ "Es el contenido: <p>" + seccion2.cont + "</p>"; 
+        document.getElementById("tres").innerHTML = seccion2.head;
+    </script>
+</body>
+</html>

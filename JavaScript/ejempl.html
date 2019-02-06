@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Este texto es el título del documento</title>
+<script>
+function mostraralerta(){
+alert('hizo clic!');
+}
+function hacerclic(){
+var elemento=document.getElementsByTagName('p')[0];
+var ele =document.getElementsByTagName('p')[1];
+elemento.addEventListener('click', mostraralerta, false);
+ele.addEventListener('click', mostraralerta, true);
+}
+window.addEventListener('load', hacerclic, false);
+</script>
+</head>
+<body>
+<div id="principal">
+<p>Hacer Clic</p>
+<p>No puede hacer Clic</p>
+</div>
+</body>
+</html>

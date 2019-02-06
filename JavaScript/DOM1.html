@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Elementos seleccionados - formulario</h1>
+
+<form id="form" action="#">
+  First name: <input type="text" name="nombre" value="Nombre"><br>
+  Last name: <input type="text" name="apellido" value="Apellido"><br><br>
+  <input type="submit" value="Enviar">
+</form> 
+
+<p>Dar click para visualizar el contenido de los elementos</p>
+
+<button onclick="Click()">Dar Click</button>
+
+<p id="prueba"></p>
+
+<script>
+function Click() {
+    var x = document.forms["form"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("prueba").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+

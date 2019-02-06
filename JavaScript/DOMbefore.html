@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+</head>
+<body>
+
+<div id="div1">
+<p id="p1" class="par">Parrafo 1</p>
+<p id="p2">Parrafo 2</p>
+texto
+texto
+texto
+<p id = "p1" class="par"> Parrafo X </p>
+</div>
+
+<button onclick="Click()">Dar Click</button>
+
+<script>
+var nparrafo = document.createElement("p");
+var ntexto = document.createTextNode("Parrafo Nuevo");
+//var nid = document.createAttribute("id");
+nparrafo.appendChild(ntexto);
+nparrafo.setAttribute("id","p3");
+
+function Click(){
+    var element = document.getElementById("div1");
+    //var child = document.getElementsByTagName("p");
+    var child = document.getElementsByClassName("par");
+    element.insertBefore(nparrafo,child);
+}
+//element.replaceChild(para, child);
+
+</script>
+
+</body>
+</html>
