@@ -1,0 +1,15 @@
+{
+	"nombre":"John Wick",
+	"edad":31,
+	"mascotas":[
+		{ "animal":"perro", "nombre":"Fido" },
+		{ "animal":"gato", "nombre":"Felix" },
+		{ "animal":"hamster", "nombre":"Lightning" }
+		],
+	"peliculas":[
+		{ "nombre":"El retorno del Jedi", "valoracion":"Excelente Pelicula" },
+		{ "nombre":"Zootopia", "valoracion":"Entretenida" },
+		{ "nombre":"El señor de los anillos", "valoracion":"Excelente Pelicula" },
+		{ "nombre":"Batman vs Superman", "valoracion":"MARTHA" }
+		]
+}

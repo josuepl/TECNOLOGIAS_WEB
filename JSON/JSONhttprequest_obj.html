@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Uso de XMLHttpRequest para la lectura de un archivo de texto</h2>
+<p>El contenido es convertido en un objeto de JavaScript</p>
+
+<p id="demo"></p>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    //document.getElementById("demo").innerHTML = myObj.nombre;
+    document.getElementById("demo").innerHTML = myObj.peliculas[3].nombre+","+myObj.peliculas[3].valoracion;
+  }
+};
+xmlhttp.open("GET", "json_demo.txt", true);
+xmlhttp.send();
+</script>
+
+<p>Contenido de <a href="json_demo.txt" target="_blank">json_demo.txt</a></p>
+
+</body>
+</html>

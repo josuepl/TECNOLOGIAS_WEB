@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"></meta>
+</head>
+<body>
+
+<h1>Almacenamiento y recuperación desde el almacenamiento local.</h1>
+
+<p id="demo"></p>
+<button onclick="uno()">Muestra un valor</button>
+<button onclick="dos()">Muestra info completa</button>
+<button onclick="tres()">Muestra info DOM</button>
+<section id= "container">
+
+</section>
+<script>
+var myObj, myJSON, text, obj;
+
+// Storing data:
+myObj = { nombre: "Josue", edad: 31, genero: "Hombre", pass:1234, id:4, tema: "oscuro" };
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+function uno() {
+    text = localStorage.getItem("testJSON");
+    obj = JSON.parse(text);
+    document.getElementById("demo").innerHTML = obj.nombre;   
+}
+
+function dos() {
+    text = localStorage.getItem("testJSON");
+    obj = JSON.parse(text);
+    document.getElementById("demo").innerHTML = getdatos();  
+}
+
+function getdatos() {
+    var varaux ="";
+    //return obj.nombre +" "+ obj.edad + " " +  obj.genero + " " + obj.id + " " +  obj.tema;
+     for (x in obj) {
+         varaux = varaux + x + ",";
+        //varaux = varaux + obj[x] + ",";
+        
+        }
+    return varaux;
+}
+
+function tres() {
+    body = "container";
+    text = localStorage.getItem("testJSON");
+    obj = JSON.parse(text);
+
+    var elem = document.createElement("p");
+    var txtnode = document.createTextNode(obj.nombre);
+    elem.appendChild(txtnode);
+
+    var contenedor = document.getElementById(body);
+    contenedor.appendChild(elem);
+
+}
+</script>
+
+</body>
+</html>

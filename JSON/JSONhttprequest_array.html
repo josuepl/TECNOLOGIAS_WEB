@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JSON txt a un arreglo.</h1>
+<p>El texto se convierte a un arreglo de JavaScript</p>
+
+<p id="demo"></p>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myArr = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myArr[5];
+  }
+};
+xmlhttp.open("GET", "json_demo_array.txt", true);
+xmlhttp.send();
+</script>
+
+<p>Contenido de  <a href="json_demo_array.txt" target="_blank">json_demo_array.txt</a></p>
+
+</body>
+</html>

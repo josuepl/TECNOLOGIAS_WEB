@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Crea un Objeto desde un texto - cadena </h1>
+
+<p id="demo"></p>
+
+<script>
+var txt = '{ "nombre": "Josue", "edad": 31, "genero": "Hombre", "pass": 1234, "id": 4, "tema": "oscuro" }'
+
+var obj = JSON.parse(txt);
+document.getElementById("demo").innerHTML = obj.nombre + ", " + obj.pass;
+</script>
+
+</body>
+</html>
