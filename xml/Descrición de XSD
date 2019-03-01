@@ -1,0 +1,8 @@
+id es entero positivo, obligatorio
+nombre cadena max 20 caracteres
+edad cadena max 20 caracteres
+genero MUJER u HOMBRE
+curp cadena max 20 caracteres
+Persona fisica boolean si o no
+Persona Moral boolean si o no
+RFC requerido
