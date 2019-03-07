@@ -1,0 +1,2 @@
+De la base de datos descargar los registros de la tabla de publicaciones en un XML, se descargarán los artículos, publicaciones, etc.
+Estas publicaciones una vez almacenadas las podremos ocupar para manipular el DOM (quitar elementos, insertar elementos)
