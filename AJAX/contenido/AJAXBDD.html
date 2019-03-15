@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<form action=""> 
+  <select name="customers" onchange="muestraper(this.value)">
+    <option value="">Selecciona un id:</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</form>
+<br>
+<div id="txtHint">La información de la persona ...</div>
+
+<script>
+function muestraper(str) {
+  var xhttp;  
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "obtenpers.php?q="+str, true);
+  xhttp.send();
+}
+</script>
+</body>
+</html>
