@@ -1,0 +1,6 @@
+De la base de datos se deberá descargar los artículos.
+Con los articulos descargados se visualizará solo los encabezados de cada artículo.
+Usando Jquery se deberá mostrar el contenido del articulo cuando se le de click al ancabezado del artículo.
+ En éste punto se hará dos cosas:
+    1) es ocultarlo con hide  que es presentación
+    2) Eliminar la estructura con DOM.
