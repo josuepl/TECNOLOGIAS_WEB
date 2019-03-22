@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+  $("#ocultar").click(function(){
+    $("p").hide(1000);
+  });
+    
+    $("#mostrar").click(function(){
+    $("p").show(1000);
+  });
+    
+     $("#ocul").click(function(){
+    $("footer").hide(1000);
+  });
+    
+    $("#most").click(function(){
+    $("footer").show(1000);
+  });
+    
+    $("p").dblclick(function(){
+    $(this).hide();
+  });
+    
+});
+    
+    
+</script>
+</head>
+<body>
+
+<button id ="ocultar">Ocultar</button>
+<button  id="mostrar">Mostrar</button>
+
+
+
+<p>Parrafo con contenido</p>
+<p>Otro parrafo otro contenido.</p>
+
+<footer>
+    <span> TEXTO </span>
+</footer>
+
+<button id ="ocul">Ocultar</button>
+
+<button  id="most">Mostrar</button>
+
+</body>
+</html>
