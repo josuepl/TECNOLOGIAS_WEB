@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#but1").click(function(){
+        $("#div1").load("holamundo.txt");
+  });
+    
+    $("#but2").click(function(){
+    $("#div1").load("holamundo2.txt #hh");
+        console.log("HOLA");
+  });
+    
+});
+</script>
+</head>
+<body>
+
+<div id="div1">
+    <h1>Jquery + AJAX </h1>
+    <p>Ejemplo 1</p>
+</div>
+
+<button id="but1">Abre archivo</button>
+<button id="but2">Abre archivo h1</button>
+
+</body>
+</html>

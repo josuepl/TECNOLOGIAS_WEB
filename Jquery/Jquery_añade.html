@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var cont = 0;
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" Nuevo Texto.");
+  });
+
+  $("#btn2").click(function(){
+    $("#ol1").append("<li>Nuevo Elemento</li>");
+  });
+  
+    $("#btn3").click(function(){
+    var cadena= "<tr> \
+        <td>Josue"+cont+"</td> \
+        <td>60</td> \
+        <td>JHEYJ25487</td> \
+    </tr> ";
+        cont=cont+1;
+    $("#tb1").append(cadena);
+  });
+  
+});
+    
+</script>
+</head>
+<body>
+
+<p>Texto de parrafo</p>
+<p>Otro parrafo</p>
+
+<ol id="ol1">
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ol>
+
+
+<table id="tb1"> 
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>CURP</th>
+    </tr>
+    <tr>
+        <td>Josue</td>
+        <td>60</td>
+        <td>JHEYJ25487</td>
+    </tr>    
+</table>
+<button id="btn1">añade Textos</button>
+<button id="btn2">Añade Items</button>
+<button id="btn3">Añade registro</button>
+</body>
+</html>

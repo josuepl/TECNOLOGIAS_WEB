@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("#btn1").click(function(){
+    $("#pr1").text("Texto Plano 'Hola Mundo'");
+  });
+  
+  $("#btn2").click(function(){
+    $("#d2").html("Texto parrafo <p>Hola Mundo</p>");
+  });
+  
+  $("#btn3").click(function(){
+    $("#pr3").val("otro Hola mundo");
+  });
+  
+});
+</script>
+</head>
+<body>
+
+<p id="pr1">parrafo.</p>
+<div id="d2">otro parrafo</div>
+
+<p>Entrada de datos: <input type="text" id="pr3" value="Texto en Blanco"></p>
+
+<button id="btn1">Cambia 'pr1' </button>
+<button id="btn2">Cambia DIV</button>
+<button id="btn3">Cambia Input</button>
+
+</body>
+</html>
