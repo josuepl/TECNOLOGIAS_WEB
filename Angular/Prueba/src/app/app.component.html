@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}  {{titulo}}!
+  </h1>
+  <p>
+      Funciona  JSON {{datosp |json}}
+  </div>
+
+  <div class="form-group">
+    <label for="usr">Nombre:</label>
+    <input type="text" [(ngModel)]="datosp.nombre" class="form-control">
+    <input  type = "text" 
+            class="form-control"
+            placeholder="LLene con su nombre y apellidos"
+            [(ngModel)]="nombre"
+            >
+    <button type="submit" class="btn btn-primary"
+    *ngIf="nombre">Enviar </button>
+    
+  </div>  
+
+  <div class="form-group">
+    <label for="usr">Nombre:</label>
+    <input type="text" [(ngModel)]="datosp.nombre" class="form-control">
+    <input  type = "text" 
+            class="form-control"
+            placeholder="LLene con su nombre y apellidos"
+            [(ngModel)]="nombre2"
+            >
+    <button type="submit" class="btn btn-primary"
+    *ngIf="nombre2; else desactivado">Enviar </button>
+    <ng-template #desactivado>
+        <button type="submit" class="btn btn-primary"
+        disabled>
+      
+        </button>
+    </ng-template>
+    
+    
+  </div>  

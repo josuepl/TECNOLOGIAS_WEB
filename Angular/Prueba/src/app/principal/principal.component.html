@@ -1,0 +1,30 @@
+<p>
+  Modulo Libres para incrustar en HTML kdsksk {{titulo}}
+</p>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+      <div class="form-group">
+        <label for="usr">Nombre:</label>
+        <input type="text" [(ngModel)]="datos.nombre" class="form-control">
+      </div>    
+      <div class="form-group">
+          <label for="usr">Apellido:</label>
+          <input type="text" class="form-control">
+        </div>
+      <div class="form-group">
+          <label for="usr">Edad:</label>
+          <input type="text" class="form-control">
+      </div> 
+      <button type="button" (click)="clickbtn()" class="btn btn-primary btn-block"> Da click </button>
+    </div>
+ 
+    <div class="col-6">
+        <app-root [propiedaddato]="datos"></app-root>
+    </div>
+
+  </div>
+</div>
