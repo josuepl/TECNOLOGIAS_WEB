@@ -14,6 +14,9 @@ try {
     print("PDO::FETCH_OBJ: ");
     print("Devolver la siguiente fila como un objeto anónimo con nombres de columna como propiedades\n");
     //$result3 = $gsent->fetch(PDO::FETCH_OBJ);
+    echo "<script>
+    var head=[''];
+    </script>";
     while($result3 = $gsent->fetch(PDO::FETCH_OBJ)){
         echo "<p>";
         print $result3->nombre."\n";
@@ -21,7 +24,15 @@ try {
         print $result3->sexo."\n";
         print("\n");
         echo "</p>";
+        echo "<script>
+            var id =".$result3->id.";
+            </script>";
+        
         echo "<article id='art".$result3->id."'>";
+        echo "<script>
+            
+            head.push('head".$result3->id ."');
+            </script>";
         echo "<header id='head".$result3->id."'>".$result3->nombre."</header>";
         echo "<p id='p".$result3->id."'>".$result3->apellidos."</p>";
         echo "<footer id='f".$result3->id."'>".$result3->sexo."</footer>";
@@ -47,16 +58,23 @@ try {
     <meta></meta>
     </head>
     <body>
+    <div id="div1">
+        
+    </div>
     <button onclick="Click()">Dar Click</button>
 
     <script>
     console.log(idp);
-    var element = document.getElementById("div1");
-    var child = document.getElementById("p5");
-    //element.insertBefore(nparrafo,child);
+    var nparrafo = document.createElement("header");
+    var ntexto = document.createTextNode(heatg5thgd[1]);
+    //var nid = document.createAttribute("id");
+    nparrafo.appendChild(ntexto);
+    nparrafo.setAttribute("id","p3");
+
 
     function Click(){
-        element.replaceChild(nparrafo, child);
+        var element = document.getElementById("div1");
+        element.appendChild(nparrafo);
     }
     </script>
     </body>
