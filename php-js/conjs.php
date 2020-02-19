@@ -66,7 +66,7 @@ try {
     <script>
     console.log(idp);
     var nparrafo = document.createElement("header");
-    var ntexto = document.createTextNode(heatg5thgd[1]);
+    var ntexto = document.createTextNode(head[1]);
     //var nid = document.createAttribute("id");
     nparrafo.appendChild(ntexto);
     nparrafo.setAttribute("id","p3");
